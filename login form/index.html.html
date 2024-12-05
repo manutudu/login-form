@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="Enter your username" id="username"><br><br>
+        <input type="text" placeholder="Enter your password" id="password"><br><br>
+        <button onclick="">Login</button><br><br>
+
+        <script>
+            function loginsystem(){
+
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+                // database
+                var regusername = "admin";
+                var regpass = "1234";
+
+                if (username == regusername && password == regpass) {
+
+                    location.replace("https://www.w3schools.com/js/default.asp");
+                    
+                } else if (username != regusername && password != regpass)  {
+
+                    document.write("ore citer ore batper... valo hoooo");
+                }
+                else if (username != regusername && password == regpass)  {
+
+                    document.write("username is incorrect");
+                }
+                 else if (username == regusername && password != regpass)  {
+
+                    document.write("password is incorrect");
+                }
+
+            }
+
+        </script>
+
+    </div>
+</body>
+</html>
